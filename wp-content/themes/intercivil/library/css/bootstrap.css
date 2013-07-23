@@ -11,9 +11,9 @@
  display: block;    
  }
  
- .navbar .dropdown-menu {
+.navbar .dropdown-menu {
   margin-top: 0px;
- }
+}
  
 .clearfix {
   *zoom: 1;
