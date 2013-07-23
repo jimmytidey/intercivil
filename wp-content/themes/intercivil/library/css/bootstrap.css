@@ -7,6 +7,14 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ ul.nav li.dropdown:hover ul.dropdown-menu {
+ display: block;    
+ }
+ 
+ .navbar .dropdown-menu {
+  margin-top: 0px;
+ }
+ 
 .clearfix {
   *zoom: 1;
 }

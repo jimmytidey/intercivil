@@ -5,8 +5,12 @@
     text-align:center;
 }
 
+body { 
+ background-color:#EDEDED;    
+}
+
 .background-container { 
-    background-color:#EDEDED;
+    background-color:#fff;
   
     left:50%;
     height:100%;
@@ -14,7 +18,10 @@
     position: fixed; 
     top: 0; 
     
-
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    
      /* Preserve aspet ratio */
      min-height: 100%;    
 }
@@ -81,15 +88,19 @@ header {
     display:none;
 }
 
-.home .attached_image { 
-    margin-top:40px;
-    margin-left:-40px;
+.home_image { 
+    width:970px;
+    margin-top:-50px;
 }
 
 .home .post_content { 
-    float:left;
-    width:400px;
-    margin-left:100px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+   float: left;
+   margin-left: 25px;
+   margin-top: 5px;
+   padding: 10px;
+   position: absolute;
+   width: 300px;
 }
 
 /* ABOUT PAGE */
