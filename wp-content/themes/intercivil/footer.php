@@ -1,15 +1,22 @@
 			<footer role="contentinfo">
 			
 				<div id="inner-footer" class="clearfix">
-		          <hr />
-		          <div id="widget-footer" class="clearfix row-fluid">
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		            <?php endif; ?>
-		          </div>
+		            <div class='row-fluid'>
+	    	            <div class='span5'>
+        		            <p>Hub Westminster, New Zealand House,<br />
+                            80 Haymarket, London<br />
+                            SW1Y 4TE<br />
+                            United Kingdom<br />
+                            London land line: +44 (0)20 7148 6738<br />
+                            Email: info@intercivil.net</p>
+    	                </div>
+    	                <div class='span3 offset3'>
+    	                    <p>Find us on:</p>
+	                        <img src='<?php bloginfo('template_directory'); ?>/images/youtube.png' />
+    	                </div>
+    	            </div>    
+	                    
+	            
 					
 					<nav class="clearfix">
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
@@ -19,10 +26,13 @@
 				
 				</div> <!-- end #inner-footer -->
 				
+				
+				
 			</footer> <!-- end footer -->
-		
+		    <br class='clearfix' />
 		</div> <!-- end #container -->
-		
+		</div><!-- end background container -->
+		<br/> <br/>
 		<!--[if lt IE 7 ]>
   			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
   			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>

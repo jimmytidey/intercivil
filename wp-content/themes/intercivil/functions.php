@@ -888,6 +888,6 @@ call_user_func_array(array(&$this, 'end_el'), $cb_args);
 }
  
 }
-register_nav_menu('top-bar', __('Primary Menu'));
+
 
 ?>

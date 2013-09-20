@@ -9,26 +9,20 @@ body {
  background-color:#EDEDED;    
 }
 
-.background-container { 
+.my-container { 
     background-color:#fff;
-  
-    left:50%;
-    height:100%;
-    z-index:-10;
-    position: fixed; 
-    top: 0; 
-    
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
-    
-     /* Preserve aspet ratio */
-     min-height: 100%;    
+    margin-top:20px;
+    border-radius: 5px 5px 5px 5px; 
+    -moz-border-radius: 5px 5px 5px 5px; 
+    -webkit-border-radius: 5px 5px 5px 5px;
+    position:relative;
+    top:20px;
+    margin-bottom:20px;
+    background-image:url(images/footer-background.png);
+    background-repeat:repeat-x;
+    background-position: bottom;
 }
 
-html, body { 
-    height:100%;
-}
 
 header { 
     margin-bottom:-20px!important;
@@ -39,23 +33,47 @@ header {
     margin-top: 12px;
 }
 
+.front_page_image {
+    border:2px solid #ce7733;
+}
+
+#menu-main .selected { 
+    background-image:url(images/menu_selected_bkg.png);
+    background-position:50% 28px;
+    background-repeat:no-repeat;
+}
+
+
+.lead {
+    font-size:inherit;
+}
+
 #logo_container { 
     margin-top:10px;
 }
 
-.nav li { 
-    margin-right:20px;
+#menu-main { 
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0 10px 0 0;
+    position: relative;  
+    color:#cc4138;
+}
+
+#menu-main li { 
+    margin-top:20px;
+    text-align: center;
+    width:25%;
+    float:left;
+    height:45px;
 }
 
 .nav li:last-child { 
     margin-right:0px;
 }
 
-#menu-main { 
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    margin-top:20px;
-}
+
 
 #menu-main a { 
     color:#cc4138;
@@ -65,11 +83,37 @@ header {
     width:100%!important;
 }
 
+#menu-contact { 
+    display: block;
+    left: 0;
+    margin: 0 10px 0 0;
+    position: relative;  
+    color:#cc4138;
+}
+
+#menu-contact li { 
+    margin-top:20px;
+    text-align: center;
+    width:80px;
+    float:right;
+    text-align:right;
+    height:45px;
+    color:#cc4138;
+}
+#menu-contact li a{ 
+ color:#cc4138;
+}
 .tagline { 
     text-align:right;
     color:#cc4138;
     font-size:20px;
-    margin-top:140px;
+}
+
+/* FOOTER */
+
+footer { 
+    
+    color:white;
 }
 
 

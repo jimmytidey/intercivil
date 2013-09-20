@@ -39,19 +39,20 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-		<div class='background-container'></div>
+		<div class='my-container container-fluid'>
+		
 		<header role="banner">
 		    
 		    <div class='container-fluid'>
-				<div class="row" id='logo_container'>
+				<div class="row-fluid" id='logo_container'>
 				    <div class='span7'>
 	        			<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">    					
     						<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo get_bloginfo('description'); ?>">
         			    </a>
 				    </div>
-				    <p class='span3 tagline'>
-				        <?= get_bloginfo ( 'description' ); ?> 
-				    </p>    
+                    <div class='span5'>
+                         <? wp_nav_menu( array( 'menu' => 3) ); ?>
+                    </div>
 				</div>
 			</div>
 		
@@ -72,7 +73,7 @@
 								</a>
 								
 								<div class="nav-collapse">
-									<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+									<? wp_nav_menu( array( 'menu' => 2) ); ?>
 								</div>
 								
 							</nav>
