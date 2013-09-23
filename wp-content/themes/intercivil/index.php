@@ -6,6 +6,9 @@
 			?>
 			<div class="clearfix row-fluid">
 			    <img src='<?php bloginfo('template_directory'); ?>/images/front.png' class='front_page_image' id='front_page_image'>
+			    <div class='carousel_caption'>
+			        <h4 class='carousel_caption_text'></h4>
+			    </div>
 			</div>
             <script>
                 
@@ -16,12 +19,13 @@
                 image_changer_images[2] = "<?php bloginfo('template_directory'); ?>/images/pros.jpg";
                 image_changer_images[3] = "<?php bloginfo('template_directory'); ?>/images/food.jpg";
                 
-                jQuery('.menu-item-object-page:eq(0)').addClass('selected');
+                jQuery('#menu-main > li:eq(0)').addClass('selected');
                 
-
+                var cap_text = jQuery('#menu-main > li > a:eq(0)').text();
+                
+                jQuery('.carousel_caption_text').text(cap_text);
                 
                 var imageChangerFunction = setInterval("changeImage()", 3000);
-                
                 var image_changer_position=0;
 
                 function changeImage() {
@@ -31,7 +35,9 @@
                     jQuery('#menu-main > li').removeClass('selected');
                     jQuery('#menu-main > li:eq('+image_changer_position+')').addClass('selected');
                     
-                    console.log("Image changer positions",image_changer_position); 
+                    var cap_text = jQuery('#menu-main > li > a:eq('+image_changer_position+')').text();
+                    
+                    jQuery('.carousel_caption_text').text(cap_text); 
                     
                     image_changer_position++;
                     if (image_changer_position == 4){ 

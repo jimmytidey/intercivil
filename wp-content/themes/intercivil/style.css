@@ -38,6 +38,22 @@ header {
     border:2px solid #ce7733;
 }
 
+.carousel_caption { 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    height: 60px;
+    margin-left: 2px;
+    margin-top: -72px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.carousel_caption h4 { 
+    padding:20px;
+    height:50px;
+}
+
 
 
 /* Menu */
@@ -62,7 +78,6 @@ header {
 }
 
 
-
 .navbar .dropdown-menu {
     margin-left:30px;
 }
@@ -71,6 +86,22 @@ header {
     background-color:white;
     box-shadow:none;
     text-decoration:underline;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color:white;
+    box-shadow:none;
+    text-decoration:underline;
+}
+
+/* Contact form */
+.wpcf7 input[type='text'], .wpcf7 input[type='email'], .wpcf7 textarea { 
+    width:90%;
+}
+
+/* YMI PAGES */
+.ymi_image {
+    border: 2px solid #CE7733;
 }
 
 footer { 

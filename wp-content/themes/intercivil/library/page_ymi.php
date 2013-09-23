@@ -1,13 +1,39 @@
 <?php
 /*
-Template Name: Contact Page
+Template Name: Yes Move Initiative
 */
 
  get_header(); ?>
 			
+			
+			<div class='row-fluid'>
+			    
+    			    <?php $attachments = new Attachments( 'attachments' ); /* pass the instance name */ ?>
+
+    		        <?php while( $attachments->get() ) : ?>
+                
+                   
+                            <img class='attached_image ymi_image ' src='<?php echo $attachments->url(); ?>' alt='<?php echo $attachments->field( 'title' ); ?>' />     
+                    
+                          
+                     
+                 
+                            
+         
+
+                            <div class='carousel_caption'>
+             			        <h4 class='carousel_caption_text'><?php echo strip_tags($attachments->field( 'caption' )); ?></h4>
+             			    </div>
+                    
+               
+
+			    
+			    <?php endwhile; ?>
+            </div>    
+			
 			<div id="content" class="clearfix row-fluid">
 			
-				<div id="main" class="span6 clearfix" role="main">
+				<div id="main" class="span8 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -52,10 +78,7 @@ Template Name: Contact Page
 
 			        
 				</div> <!-- end #main -->
-                <div id="map" class="span6 ">
-                    <iframe  width='100%' height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=80+Haymarket,+London&amp;sll=51.48931,-0.08819&amp;sspn=0.552395,0.937958&amp;ie=UTF8&amp;hq=&amp;hnear=80+Haymarket,+London+SW1Y+4TE,+United+Kingdom&amp;t=m&amp;ll=51.514191,-0.126514&amp;spn=0.016024,0.034246&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=80+Haymarket,+London&amp;sll=51.48931,-0.08819&amp;sspn=0.552395,0.937958&amp;ie=UTF8&amp;hq=&amp;hnear=80+Haymarket,+London+SW1Y+4TE,+United+Kingdom&amp;t=m&amp;ll=51.514191,-0.126514&amp;spn=0.016024,0.034246&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-                    
-                </div>    
+                
 
 			
     
