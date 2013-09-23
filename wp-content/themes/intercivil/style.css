@@ -1,6 +1,7 @@
 
 
-/* HEADER AND FOOTER */ 
+
+/* Intercivil cusotisations */ 
 .attribution { 
     text-align:center;
 }
@@ -37,11 +38,64 @@ header {
     border:2px solid #ce7733;
 }
 
-#menu-main .selected { 
-    background-image:url(images/menu_selected_bkg.png);
-    background-position:50% 28px;
-    background-repeat:no-repeat;
+
+
+/* Menu */
+
+#menu-main { 
+    margin-top:20px;
+    
 }
+
+/* Get rid of the little pointer thing at the top of dropdowns */
+.navbar .nav > li > .dropdown-menu:after { 
+    display:none;
+    background:none;
+    border:none;
+}
+
+
+.navbar .nav > li > .dropdown-menu:before  { 
+    display:none;
+    background:none;
+    border:none;    
+}
+
+
+
+.navbar .dropdown-menu {
+    margin-left:30px;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus  {
+    background-color:white;
+    box-shadow:none;
+    text-decoration:underline;
+}
+
+footer { 
+    margin-top:100px;
+}
+
+
+@media (min-width: 768px) {
+    #menu-main li {
+        width:25%;
+        text-align:center;
+    }
+    
+    #menu-main li li { 
+        width:100%;
+    }
+    
+    #menu-main .selected { 
+        background-image:url(images/menu_selected_bkg.png);
+        background-position:50% 28px;
+        background-repeat:no-repeat;
+    }
+}
+
+
 
 
 .lead {
@@ -52,26 +106,6 @@ header {
     margin-top:10px;
 }
 
-#menu-main { 
-    display: block;
-    float: left;
-    left: 0;
-    margin: 0 10px 0 0;
-    position: relative;  
-    color:#cc4138;
-}
-
-#menu-main li { 
-    margin-top:20px;
-    text-align: center;
-    width:25%;
-    float:left;
-    height:45px;
-}
-
-.nav li:last-child { 
-    margin-right:0px;
-}
 
 
 
@@ -108,6 +142,25 @@ header {
     color:#cc4138;
     font-size:20px;
 }
+
+
+
+/* FONTS */ 
+
+body {
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !important;
+}
+
+
+.post_date { 
+    font-weight:800;
+    margin-bottom:1em;
+}
+
+
+
+/* end Intercivil cusotisations */ 
+
 
 /* FOOTER */
 

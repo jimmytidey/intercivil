@@ -18,16 +18,20 @@
                 
                 jQuery('.menu-item-object-page:eq(0)').addClass('selected');
                 
-                setInterval("changeImage()", 3000);
+
                 
-                var image_changer_position=1;
+                var imageChangerFunction = setInterval("changeImage()", 3000);
+                
+                var image_changer_position=0;
 
                 function changeImage() {
                     
                     document.getElementById("front_page_image").src=image_changer_images[image_changer_position];
                     
-                    jQuery('#menu-main .menu-item-object-page').removeClass('selected');
-                    jQuery('#menu-main .menu-item-object-page:eq('+image_changer_position+')').addClass('selected');
+                    jQuery('#menu-main > li').removeClass('selected');
+                    jQuery('#menu-main > li:eq('+image_changer_position+')').addClass('selected');
+                    
+                    console.log("Image changer positions",image_changer_position); 
                     
                     image_changer_position++;
                     if (image_changer_position == 4){ 
@@ -36,6 +40,10 @@
                     
       
                 }
+                
+                jQuery('.menu-item-object-page').hover(function(){
+                    clearInterval(imageChangerFunction);
+                });
             </script>
 	
 			<?php
@@ -44,7 +52,7 @@
 			
 			<div id="content" class="clearfix row-fluid">
 			
-				<div id="main" class="span8 clearfix" role="main">
+				<div id="main" class="span10 clearfix" role="main">
                     
                     <h2>Latest News</h2>    
                     

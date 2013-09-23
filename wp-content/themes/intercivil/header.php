@@ -73,7 +73,13 @@
 								</a>
 								
 								<div class="nav-collapse">
-									<? wp_nav_menu( array( 'menu' => 2) ); ?>
+									<? wp_nav_menu( array(
+									'menu' => 2,
+									'depth'      => 2,
+                                    'container'  => false,
+                                    'menu_class' => 'nav navbar-nav',
+                                    'fallback_cb' => 'wp_page_menu',
+                                    'walker' => new wp_bootstrap_navwalker()) ); ?>
 								</div>
 								
 							</nav>
